@@ -1,0 +1,15 @@
+8 - [1.5 Pontos] Descreva com suas palavras o que é o loop de eventos no contexto do
+Node.js. Explique como ele funciona para permitir operações assíncronas não
+bloqueantes, mencionando os tipos de tarefas que são processadas em cada fase do
+loop de eventos. Como o loop de eventos se relaciona com a eficiência do Node.js em
+lidar com I/O assíncrono?
+    O Event Loop é responsável pela execução do código, coleta e processamento de eventos e execução de subtarefas enfileiradas. E usando o async / await, a execução não será bloqueada por alguma função mais pesada.
+
+9 - [1.5 Pontos] Explique com suas palavras o papel da engine V8 e da biblioteca libuv no
+funcionamento do Node.js. Como cada uma dessas componentes contribui para a
+execução de código JavaScript e operações de I/O assíncronas, respectivamente?
+Discuta como a interação entre V8 e libuv permite que o Node.js ofereça um
+desempenho eficiente para aplicações web.
+    O V8, pode executar o código JavaScript dentro ou fora de um navegador, o que possibilita o script do lado do servidor.
+    O Libuv é uma biblioteca open source que lida sinalização e comunicação entre processos, necessária para fazer com que as tarefas assíncronas funcionem.
+    O V8 e Libuv trabalham juntos para que o código seja executado e processado de maneira eficiente e rápida para que a aplicação web não seja lenta e desprazerosa para o usuário
